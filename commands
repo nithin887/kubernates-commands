@@ -1,0 +1,19 @@
+ [KUBERNATRES PODS IN DECLARATIVE  
+apiVersion: v1
+kind: Pod
+metadata:
+  name: javawebapp
+spec:
+  containers:
+    - name: javawebapp
+      image: your-image:latest
+      ports:
+        - containerPort: 8080 ]
+Check Kubernetes Version : kubectl version
+Check Cluster Info : kubectl cluster-info
+ TO check all the nodes : kubectl get nodes
+Check all the pods: kubectl get pods
+Describe a Node: kubectl describe node <node-name>
+
+
+
