@@ -18,6 +18,21 @@ List Pods in a Specific Namespace: kubectl get pods -n <namespace>
 Describe a pod : kubectl describe pod <pod-name>
 Create a Pod from a YAML File: kubectl apply -f pod.yml
 Delete All Pods: kubectl delete pods --all
+[ KUBERNATES SEVICE IS USED TO ESPOSE PODS OUTSIDE THE CLUSTER EX:
+apiVersion: v1
+kind: Service
+metadata:
+  name: javawebappsvc
+spec:
+  type: NodePort  # Fixed typo (was "Nodepart")
+  selector:
+    app: javawebapp
+  ports:
+    - port: 80
+      targetPort: 8080 ]
+Check the service: kubectl get svc
+TO describe sevice in k8s: kubectl describe svc <svc-name>
+
 
 
 
