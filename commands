@@ -11,9 +11,20 @@ spec:
         - containerPort: 8080 ]
 Check Kubernetes Version : kubectl version
 Check Cluster Info : kubectl cluster-info
- TO check all the nodes : kubectl get nodes
+check all the nodes : kubectl get nodes
 Check all the pods: kubectl get pods
 Describe a Node: kubectl describe node <node-name>
+List Pods in a Specific Namespace: kubectl get pods -n <namespace>
+Describe a pod : kubectl describe pod <pod-name>
+Create a Pod from a YAML File: kubectl apply -f pod.yml
+Delete All Pods: kubectl delete pods --all
+
+
+
+
+
+
+
 
 
 
