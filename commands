@@ -32,6 +32,7 @@ spec:
       targetPort: 8080 ]
 Check the service: kubectl get svc
 TO describe sevice in k8s: kubectl describe svc <svc-name>
+To delete everything in kubernates: kubectl delete all --all
 
 
 
